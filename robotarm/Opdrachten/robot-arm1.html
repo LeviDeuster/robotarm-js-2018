@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>robot-arm</title>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="800" height="600"></canvas>
+     	<script src="robot-arm.js"></script>
+		<script>
+			var canvas = document.getElementById("canvas");
+			var robotArm = new RobotArm(canvas);
+			robotArm.speed = 1000;
+
+			//what level to load
+			robotArm.loadLevel("exercise 1");
+
+			//your code here
+			robotArm.moveRight();
+			robotArm.grab();
+			robotArm.moveLeft();
+			robotArm.drop();
+
+			//end code
+			robotArm.run();
+		</script>
+	</body>
+</html>
